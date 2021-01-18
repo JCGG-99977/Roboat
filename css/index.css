@@ -1,0 +1,84 @@
+/* css初始化 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* 设置整体布局的样式 */
+
+.action {
+    width: 500px;
+    height: 700px;
+    border: 1px solid #999;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.action h3 {
+    text-align: center;
+}
+
+
+/* 设置消息装载容器 */
+
+.action .top {
+    flex: 15;
+    background-color: #ddd;
+}
+
+.action .top .menu {
+    position: relative;
+}
+
+.action .top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.action .top .message {
+    border: 5px solid black;
+    border-radius: 6px;
+    max-width: 290px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: black;
+    margin-left: 13px;
+    line-height: 24px;
+}
+
+.action .top .top_left {
+    left: 0;
+    display: block;
+}
+
+.action .top .top_right {
+    position: absolute;
+    right: 0;
+}
+
+
+/* 设置输入消息容器 */
+
+.action .bottom {
+    flex: 1;
+    background-color: #333;
+    display: flex;
+}
+
+.bottom input {
+    flex: 4;
+}
+
+.bottom button {
+    flex: 1;
+}
